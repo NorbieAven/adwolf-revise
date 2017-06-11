@@ -1,0 +1,351 @@
+@font-face { 
+  font-family: GothamBold;
+  src: url('adwolf-font/GOTHAM-BOLD.TTF');
+}
+
+@font-face { 
+  font-family: Myriad;
+  src: url('adwolf-font/MYRIADPRO-REGULAR.OTF');
+}
+
+@font-face { 
+  font-family: GothamUltra;
+  src: url('adwolf-font/gotham-ultra.ttf');
+}
+
+
+body{
+  background-color: #E7E7E7
+}
+
+img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+@media (min-width: 1200px) {
+    .container{
+        max-width: 1080px;
+    }
+}
+
+/* primary nav menu */
+
+#primary-nav {
+  background-image: url('img/header.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 128px;
+  font-family: GothamBold, sans-serif;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+#primary-nav .navbar-nav{
+  margin-top: 40px;
+}
+
+#primary-nav .navbar-nav li a {
+  color: #fff;
+}
+
+#primary-nav .navbar-nav li a:hover {
+  color: #00E4AB;
+}
+
+#primary-nav .navbar-right {
+  padding: 2px;
+}
+
+/* secondary nav menu */
+#secondary-nav {
+  background-color: #00E4AB;
+  min-height: 35px;
+  font-family: Myriad;
+  font-size: 16px;
+  margin-bottom: 0;
+  border: none !important;
+}
+
+#secondary-nav .navbar-nav li {
+  padding-top: 6px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#secondary-nav .navbar-nav li a {
+  padding: 0;
+  color: #333;
+}
+
+#secondary-nav .navbar-nav li a:hover {
+  color: #3E5467;
+}
+
+#secondary-nav .copyright {
+  color: #009D76;
+}
+
+/* ads */
+.ad_space_1 {
+  height: 100px;
+  width: 100%;
+}
+
+.ad_space_2 {
+  height: 100px;
+  width: 100%;
+}
+
+/* detail page - main */
+.detail_category {
+  background-color: #B7B7B7;
+  padding: 5px;
+  font-size: 18px;
+}
+
+.detail_title {
+  font-family: gothamUltra, Arial;
+  font-size: 42px;
+}
+
+.detail_subhead {
+  font-family: Arial;
+}
+
+.detail_date {
+  color: #939393;
+}
+
+.detail_author {
+  color: #2F82F2;
+  font-size: 20px;
+}
+
+.detail_author_des {
+  color: #303030;
+}
+
+.detail_paragraph {
+  font-family: Myriad;
+  font-size: 18px;
+}
+
+.leave_comment {
+  font-family: gothamUltra;
+}
+
+/*right panel details page*/
+.more_on_roundup {
+  height: 600px;
+  width: 100%;
+  border: 2px solid #B7B7B7;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: gothamUltra;
+}
+
+
+
+
+
+/*sponsor page*/
+.sponsor{
+  background-color: #fff;
+  max-width: 592px;
+  margin: 0 auto;
+}
+
+.sponsor-title h1{
+  color: black;
+  font-size: 2em;
+  text-transform: uppercase;
+  font-family: GothamBold;
+  font-weight: bolder;
+}
+
+.sponsor-p{
+  font-size: 1.2em;
+  font-family: Myriad;
+}
+
+.sponsorcenter{
+  margin: auto;
+  width: 86%;
+  display: block;
+}
+
+.avatar {
+    overflow:hidden;
+    -webkit-border-radius:50px;
+    -moz-border-radius:50px;
+    border-radius:50px;
+    width:35px;
+    height:35px;
+}
+
+.footer-content{
+  padding-bottom: 15px;
+}
+
+.author-name{
+  font-size: 0.7em;
+  color: #a7a7a7;
+  display: -webkit-inline-box;
+}
+
+.author-name a{
+  color: #a7a7a7;
+  text-decoration: none !important;
+}
+
+.categories-sponsor{
+  clear: both;
+  font-size: 0.8em;
+  font-family: Myriad;
+}
+
+#bloc1, #bloc2, #bloc3
+{
+    display:inline;
+    margin-right: 5px;
+}
+
+.categories-FOOD{
+  background-color: red;
+  padding: 2px;
+}
+
+.categories-LIVING{
+  background-color: #00FCFF;
+  padding: 2px;
+}
+
+.categories-LITERATURE{
+  background-color: #6D8AFF;
+  padding: 2px;
+}
+
+.wrapper { 
+  overflow:hidden;
+}
+
+#one {
+  float:left; 
+  margin-right:20px;
+  width: 331px;
+}
+#two { 
+  overflow:hidden;
+  margin:10px;
+}
+
+@media only screen 
+and (min-device-width : 320px)
+and (max-device-width : 568px) 
+and (orientation : landscape) {
+   #one { 
+    float: none;
+    margin-right:0;
+    width:auto;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+
+.col-md-8 {
+    width: 100%;
+}
+
+}
+
+
+/*end of sponsor*/
+
+
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+
+    /*==========  Mobile First Method  ==========*/
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (min-width : 320px) {
+
+
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (min-width : 480px) {
+    }
+
+ 
+
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
+      .navbar-brand{
+        margin: 0 auto !important;
+      }
+
+    }
+    
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+
+
+    }
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+
+
+    }
+
+    /*==========  Non-Mobile First Method  ==========*/
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (max-width : 1200px) {
+      .col-sm-6 {
+        width: 100%;
+      }
+
+
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (max-width : 992px) {
+
+
+
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+
+
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (max-width : 480px) {
+      #one { 
+        float: none;
+        margin-right:0;
+        width:auto;
+        border:0; 
+      }
+
+    }
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (max-width : 320px) {
+
+
+    }
+
