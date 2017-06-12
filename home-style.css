@@ -178,12 +178,12 @@ img {
 }
 
 .avatar {
-    overflow:hidden;
-    -webkit-border-radius:50px;
-    -moz-border-radius:50px;
-    border-radius:50px;
-    width:35px;
-    height:35px;
+  overflow:hidden;
+  -webkit-border-radius:50px;
+  -moz-border-radius:50px;
+  border-radius:50px;
+  width:25px;
+  height:25px;
 }
 
 .footer-content{
@@ -209,8 +209,8 @@ img {
 
 #bloc1, #bloc2, #bloc3
 {
-    display:inline;
-    margin-right: 5px;
+  display:inline;
+  margin-right: 5px;
 }
 
 .categories-FOOD{
@@ -239,7 +239,7 @@ img {
 }
 #two { 
   overflow:hidden;
-  margin:10px;
+  margin:5px;
 }
 
 @media only screen 
@@ -261,12 +261,134 @@ and (orientation : landscape) {
 
 .col-md-8 {
     width: 100%;
-}
+  }
 
 }
-
-
 /*end of sponsor*/
+
+
+/*article*/
+.article{
+  background-color: #fff;
+  max-width: 592px;
+  margin: 0 auto;
+  max-height: 175px;  
+  margin-top: 15px;
+}
+
+.article-title span {
+  font-size: 2em;
+  font-family: Myriad;
+  font-weight: bold;
+}
+
+.categories-entertainment{
+  background-color: #FFA703;
+  padding: 2px;
+}
+
+.img-valign {
+  vertical-align: middle;
+  margin-bottom: 0.0em;
+  display: inline-block;
+}
+
+.text2 {
+  font-size: 1.5em;
+  display: inline-block;
+  font-family: Myriad;
+  font-weight: bold;
+  padding-bottom: 32px;
+  position: relative;
+  top: -13px;
+}
+
+.article-content {
+  position:relative;
+  display:table-cell; 
+  margin 0 auto; 
+  padding: 0px 10px 0px 0px;
+  width: 15%;
+}
+
+#one-article{
+    float: left;
+    margin-right: 20px;
+    width: 280px;
+}
+
+#one-article2{
+    float: left;
+    margin-right: 20px;
+    width: 240px;
+}
+
+.cat-article{
+  clear: both;
+  font-size: 0.8em;
+  font-family: Myriad;
+}
+
+.categories-LITERATURE{
+  background-color: #6D8AFF;
+  padding: 2px;
+}
+
+/*end of article*/
+
+
+/* Sidebar*/
+.ad-space{
+  width: 454px;
+  height: 250px;
+  background-color:#B6E7D4; 
+  text-align: center;
+  padding-top: 100px;
+  margin-bottom: 15px;
+
+}
+
+.side-ads{
+  margin-left: -91px;
+}
+
+.video{
+  width:454px;
+  height:250px;
+
+}
+
+.video1{
+
+  width:454px;
+  height: 350px;
+  background-color: #fff;
+  margin-bottom: 15px;
+}
+
+.video1 label{
+  color: #F56095;
+  font-size: 1.5em;
+  font-weight: bolder;
+  margin-top: 5px;
+}
+
+.video-title label{
+  padding-top: 4px;
+  padding-left: 10px
+}
+
+.logo-hungry{
+  float: right
+}
+.sharebuton{
+   float: right; 
+}
+.icon-share{
+   height: 20px;
+}
+
+/*end of sidebar*/
 
 
 /*==================================================
@@ -278,6 +400,19 @@ and (orientation : landscape) {
     /* Custom, iPhone Retina */ 
     @media only screen and (min-width : 320px) {
 
+      .text2 {
+        position: relative;
+        top: -5px;
+      }
+
+      .adult-text{
+        position: relative;
+        top: -24px;
+      }
+
+      .author-name {
+        font-size: 0.6em;
+      }
 
     }
 
@@ -299,7 +434,9 @@ and (orientation : landscape) {
     /* Medium Devices, Desktops */
     @media only screen and (min-width : 992px) {
 
-
+      .col-md-8 {
+        width: 59.666667%;
+      }
     }
 
     /* Large Devices, Wide Screens */
@@ -312,6 +449,7 @@ and (orientation : landscape) {
 
     /* Large Devices, Wide Screens */
     @media only screen and (max-width : 1200px) {
+      
       .col-sm-6 {
         width: 100%;
       }
@@ -321,8 +459,18 @@ and (orientation : landscape) {
 
     /* Medium Devices, Desktops */
     @media only screen and (max-width : 992px) {
+      .desktop{
+        display: none;
+      }
 
+      .mobile{
+        display: block
+      }
 
+      .video1 {
+        text-decoration: none !important;
+        display: none !important;
+      }
 
     }
 
@@ -335,17 +483,62 @@ and (orientation : landscape) {
     /* Extra Small Devices, Phones */ 
     @media only screen and (max-width : 480px) {
       #one { 
-        float: none;
-        margin-right:0;
-        width:auto;
-        border:0; 
-      }
+          float: none;
+          margin-right:0;
+          width:auto;
+          border:0; 
+        }
+
+      #one-article{ 
+          float: none;
+          margin-right:0;
+          width:auto;
+          border:0; 
+        }
+       #one-article2{ 
+          float: none;
+          margin-right:0;
+          width:auto;
+          border:0; 
+        }
+
+      .text2 {
+          font-size: 0.9em;
+          padding-bottom: 0px;
+        }
+
+      .avatar {
+          width: 20px;
+          height: 20px;
+        }
+
+      .categories-sponsor {
+          clear: both;
+          font-size: 0.6em;
+        }
+
+      .ad-space {
+          text-decoration: none !important;
+          width:  320px;    
+          height: 100px;
+          background-color: #b7b7b7;
+          padding-top: 30px;
+          color: white;
+          font-weight: bolder;
+        }
 
     }
 
     /* Custom, iPhone Retina */ 
     @media only screen and (max-width : 320px) {
 
+    .author-name {
+        font-size: 0.5em;
+      }
+
+    .cat-article {
+        font-size: 0.5em;
+      }
 
     }
 
